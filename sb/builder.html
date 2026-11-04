@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Enter Your Details</h1>
+    </header>
+
+    <main>
+        <!-- The Input Form -->
+        <form id="resumeForm">
+            <label>Full Name:</label>
+            <input type="text" id="nameBox" placeholder="Enter your full name">
+
+            <label>Email Address:</label>
+            <input type="text" id="emailBox" placeholder="Enter your email">
+
+            <label>Education / College:</label>
+            <input type="text" id="collegeBox" placeholder="e.g., BSc Computer Science">
+
+            <label>Key Skills:</label>
+            <input type="text" id="skillsBox" placeholder="e.g., HTML, CSS, Java">
+
+            <button type="submit" class="btn">Generate Resume</button>
+        </form>
+
+        <!-- The Finished Resume (Hidden by default in CSS) -->
+        <div id="resumeOutput" class="hidden">
+            <h2 id="outName">Name goes here</h2>
+            <p id="outEmail">Email goes here</p>
+            <hr>
+            <h3>Education</h3>
+            <p id="outCollege">College goes here</p>
+            <h3>Skills</h3>
+            <p id="outSkills">Skills go here</p>
+            
+            <a href="index.html" class="btn">Make Another Resume</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
